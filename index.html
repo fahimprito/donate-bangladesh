@@ -20,6 +20,7 @@
                     colors: {
                         clifford: '#da373d',
                         lightGreen: '#B4F461',
+                        navBg: '#F9F7F3',
                         blackSecondary: '#11111191',
                     },
                     fontFamily: {
@@ -33,15 +34,15 @@
 
 <body class="font-lexend">
     <header>
-        <nav class="bg-[#F9F7F3] py-6">
-            <div class="container mx-auto navbar">
+        <nav class="bg-navBg py-6">
+            <div class="container mx-auto navbar px-4">
                 <div class="navbar-start">
-                    <button class="btn bg-lightGreen hover:bg-lime-400 font-semibold text-xl px-8 ">Blog</button>
+                    <button id="blog-page" class="btn bg-lightGreen hover:bg-lime-400 font-semibold text-xl px-8">Blog</button>
                 </div>
                 <div class="navbar-center">
                     <a class="flex items-center gap-2" href="./index.html">
                         <img src="./assets/logo.png" alt="logo">
-                        <h1 class="font-semibold text-2xl ">Donate Bangladesh</h1>
+                        <h1 class="font-semibold text-2xl max-sm:hidden">Donate Bangladesh</h1>
                     </a>
                 </div>
                 <div class="navbar-end">
@@ -56,19 +57,127 @@
 
         <!-- buttons -->
         <div class="flex justify-center gap-4 py-6">
-            <button class="btn btn-lg bg-lightGreen hover:bg-lime-400 font-semibold text-xl px-10 ">Donation</button>
-            <button class="btn btn-lg  btn-outline hover:bg-lightGreen text-blackSecondary hover:text-blackSecondary border-gray-400 hover:border-gray-300 font-semibold text-xl px-10 ">History</button>
+            <button id="donation-btn" class="btn btn-lg bg-lightGreen hover:bg-lime-400 font-semibold text-xl px-10 ">Donation</button>
+            <button id="history-btn"
+                class="btn btn-lg  btn-outline hover:bg-lightGreen text-blackSecondary hover:text-blackSecondary border-gray-400 hover:border-gray-300 font-semibold text-xl px-10 ">History</button>
         </div>
     </header>
 
-    <main>
+    <main class="container mx-auto px-4">
+
+        <!-- donation section  -->
+        <section id="donation-section" class="">
+            <!-- card noakhali -->
+            <div
+                class="rounded-xl overflow-hidden border-2 grid grid-cols-1 lg:grid-cols-2 sm:gap-6 items-center p-6 my-10">
+                <img class="mx-auto w-full h-full" src="./assets/noakhali.png" alt="" />
+
+                <div class="flex flex-col justify-between gap-4 mt-3">
+                    <div class="flex justify-start">
+                        <div class="flex gap-2 font-semibold text-xl text-blackSecondary bg-[#11111115] p-2 rounded-lg">
+                            <img class="w-7" src="./assets/taka.png" alt="taka logo">
+                            <div>0</div>
+                            <div>BDT</div>
+                        </div>
+                    </div>
+                    <h2 class="font-bold text-2xl text-gray-one">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p class="text-xl text-blackSecondary">
+                        The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                        donation
+                        will help provide essential supplies and to those affected by this disaster. Every contribution,
+                        big
+                        or small, makes difference. Please join us in supporting the relief efforts and making a
+                        positive
+                        impact on the lives of those in need.
+                    </p>
+                    <input type="text" placeholder="Write Donation Amount"
+                        class="input input-lg input-bordered w-full" />
+                    <button
+                        class="btn btn-lg bg-lightGreen hover:bg-lime-400 font-semibold text-xl px-10 ">Donation</button>
+                </div>
+            </div>
+            <!-- card noakhali -->
+            <div
+                class="rounded-xl overflow-hidden border-2 grid grid-cols-1 lg:grid-cols-2 sm:gap-6 items-center p-6 my-10">
+                <img class="mx-auto w-full h-full" src="./assets/feni.png" alt="" />
+
+                <div class="flex flex-col justify-between gap-4 mt-3">
+                    <div class="flex justify-start">
+                        <div class="flex gap-2 font-semibold text-xl text-blackSecondary bg-[#11111115] p-2 rounded-lg">
+                            <img class="w-7" src="./assets/taka.png" alt="taka logo">
+                            <div>0</div>
+                            <div>BDT</div>
+                        </div>
+                    </div>
+                    <h2 class="font-bold text-2xl text-gray-one">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p class="text-xl text-blackSecondary">
+                        The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                        donation
+                        will help provide essential supplies and to those affected by this disaster. Every contribution,
+                        big
+                        or small, makes difference. Please join us in supporting the relief efforts and making a
+                        positive
+                        impact on the lives of those in need.
+                    </p>
+                    <input type="text" placeholder="Write Donation Amount"
+                        class="input input-lg input-bordered w-full" />
+                    <button
+                        class="btn btn-lg bg-lightGreen hover:bg-lime-400 font-semibold text-xl px-10 ">Donation</button>
+                </div>
+            </div>
+            <!-- card noakhali -->
+            <div
+                class="rounded-xl overflow-hidden border-2 grid grid-cols-1 lg:grid-cols-2 sm:gap-6 items-center p-6 my-10">
+                <img class="mx-auto w-full h-full" src="./assets/quota-protest.png" alt="" />
+
+                <div class="flex flex-col justify-between gap-4 mt-3">
+                    <div class="flex justify-start">
+                        <div class="flex gap-2 font-semibold text-xl text-blackSecondary bg-[#11111115] p-2 rounded-lg">
+                            <img class="w-7" src="./assets/taka.png" alt="taka logo">
+                            <div>0</div>
+                            <div>BDT</div>
+                        </div>
+                    </div>
+                    <h2 class="font-bold text-2xl text-gray-one">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p class="text-xl text-blackSecondary">
+                        The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                        donation
+                        will help provide essential supplies and to those affected by this disaster. Every contribution,
+                        big
+                        or small, makes difference. Please join us in supporting the relief efforts and making a
+                        positive
+                        impact on the lives of those in need.
+                    </p>
+                    <input type="text" placeholder="Write Donation Amount"
+                        class="input input-lg input-bordered w-full" />
+                    <button
+                        class="btn btn-lg bg-lightGreen hover:bg-lime-400 font-semibold text-xl px-10 ">Donation</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- History section  -->
+         <section id="history-section" class="hidden">
+            <div
+                class="rounded-xl border-2 items-center p-6 my-10">
+                <div class="flex flex-col justify-between gap-4">
+                    <h2 class="font-bold text-2xl text-gray-one">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
+                    <p class="text-xl text-blackSecondary">
+                        Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
+                    </p>
+                </div>
+            </div>
+
+         </section>
 
     </main>
 
+    <footer class="bg-navBg py-16 mt-16"></footer>
 
     <script src="./js/addAmount.js"></script>
     <script src="./js/utilities.js"></script>
     <script src="./js/features.js"></script>
+    <script src="./js/blog.js"></script>
 </body>
 
 </html>
