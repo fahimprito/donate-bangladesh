@@ -20,6 +20,7 @@
                     colors: {
                         clifford: '#da373d',
                         lightGreen: '#B4F461',
+                        blackSecondary: '#11111191',
                     },
                     fontFamily: {
                         lexend: "Lexend",
@@ -32,7 +33,32 @@
 
 <body class="font-lexend">
     <header>
-        <h1 class=" text-9xl ">Donate Bangladesh</h1>
+        <nav class="bg-[#F9F7F3] py-6">
+            <div class="container mx-auto navbar">
+                <div class="navbar-start">
+                    <button class="btn bg-lightGreen hover:bg-lime-400 font-semibold text-xl px-8 ">Blog</button>
+                </div>
+                <div class="navbar-center">
+                    <a class="flex items-center gap-2" href="./index.html">
+                        <img src="./assets/logo.png" alt="logo">
+                        <h1 class="font-semibold text-2xl ">Donate Bangladesh</h1>
+                    </a>
+                </div>
+                <div class="navbar-end">
+                    <div class="flex gap-2 font-semibold text-xl text-blackSecondary">
+                        <img class="w-7" src="./assets/taka.png" alt="taka logo">
+                        <div>5500</div>
+                        <div>BDT</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- buttons -->
+        <div class="flex justify-center gap-4 py-6">
+            <button class="btn btn-lg bg-lightGreen hover:bg-lime-400 font-semibold text-xl px-10 ">Donation</button>
+            <button class="btn btn-lg  btn-outline hover:bg-lightGreen text-blackSecondary hover:text-blackSecondary border-gray-400 hover:border-gray-300 font-semibold text-xl px-10 ">History</button>
+        </div>
     </header>
 
     <main>

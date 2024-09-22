@@ -6,6 +6,7 @@ module.exports = {
             colors: {
                 clifford: '#da373d',
                 lightGreen: '#B4F461',
+                blackSecondary: '#11111191',
             },
             fontFamily: {
                 lexend: "Lexend",
