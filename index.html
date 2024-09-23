@@ -113,7 +113,7 @@
                     </dialog>
                 </div>
             </div>
-            <!-- card noakhali -->
+            <!-- card feni -->
             <div
                 class="rounded-xl overflow-hidden border-2 grid grid-cols-1 lg:grid-cols-2 sm:gap-6 items-center p-6 my-10">
                 <img class="mx-auto w-full h-full" src="./assets/feni.png" alt="" />
@@ -122,27 +122,36 @@
                     <div class="flex justify-start">
                         <div class="flex gap-2 font-semibold text-xl text-blackSecondary bg-[#11111115] p-2 rounded-lg">
                             <img class="w-7" src="./assets/taka.png" alt="taka logo">
-                            <div>0</div>
+                            <div id="donate-for-feni">0</div>
                             <div>BDT</div>
                         </div>
                     </div>
-                    <h2 class="font-bold text-2xl text-gray-one">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <h2 class="font-bold text-2xl text-gray-one">Donate for Flood Relief in Feni,Bangladesh</h2>
                     <p class="text-xl text-blackSecondary">
-                        The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
-                        donation
-                        will help provide essential supplies and to those affected by this disaster. Every contribution,
-                        big
-                        or small, makes difference. Please join us in supporting the relief efforts and making a
-                        positive
-                        impact on the lives of those in need.
+                        The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
                     </p>
-                    <input type="text" placeholder="Write Donation Amount"
+                    <input id="amount-input-feni" type="text" placeholder="Write Donation Amount"
                         class="input input-lg input-bordered w-full" />
-                    <button
+                    <button id="btn-amount-input-feni"
                         class="btn btn-lg bg-lightGreen hover:bg-lime-400 font-semibold text-xl px-10 ">Donation</button>
+                    <!-- Open the modal -->
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                        <div class="modal-box flex flex-col items-center">
+                            <h3 class="text-4xl font-bold">Congrates!</h3>
+                            <img class="py-7" src="./assets/taka.png" alt="tata logo">
+                            <p class="py-4">You have donated for humankind</p>
+                            <h3 class="text-2xl font-bold">successfully</h3>
+                            <div class="modal-action">
+                                <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn px-10">Close confirmation</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
                 </div>
             </div>
-            <!-- card noakhali -->
+            <!-- card Quota Movement -->
             <div
                 class="rounded-xl overflow-hidden border-2 grid grid-cols-1 lg:grid-cols-2 sm:gap-6 items-center p-6 my-10">
                 <img class="mx-auto w-full h-full" src="./assets/quota-protest.png" alt="" />
@@ -151,11 +160,11 @@
                     <div class="flex justify-start">
                         <div class="flex gap-2 font-semibold text-xl text-blackSecondary bg-[#11111115] p-2 rounded-lg">
                             <img class="w-7" src="./assets/taka.png" alt="taka logo">
-                            <div>0</div>
+                            <div id="donate-for-nk">0</div>
                             <div>BDT</div>
                         </div>
                     </div>
-                    <h2 class="font-bold text-2xl text-gray-one">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <h2 class="font-bold text-2xl text-gray-one">Aid for Injured in the Quota Movement</h2>
                     <p class="text-xl text-blackSecondary">
                         The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
                         donation
@@ -165,12 +174,28 @@
                         positive
                         impact on the lives of those in need.
                     </p>
-                    <input type="text" placeholder="Write Donation Amount"
+                    <input id="amount-input-nk" type="text" placeholder="Write Donation Amount"
                         class="input input-lg input-bordered w-full" />
-                    <button
+                    <button id="btn-amount-input-nk"
                         class="btn btn-lg bg-lightGreen hover:bg-lime-400 font-semibold text-xl px-10 ">Donation</button>
+                    <!-- Open the modal -->
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                        <div class="modal-box flex flex-col items-center">
+                            <h3 class="text-4xl font-bold">Congrates!</h3>
+                            <img class="py-7" src="./assets/taka.png" alt="tata logo">
+                            <p class="py-4">You have donated for humankind</p>
+                            <h3 class="text-2xl font-bold">successfully</h3>
+                            <div class="modal-action">
+                                <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn px-10">Close confirmation</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
                 </div>
             </div>
+            
         </section>
 
         <!-- History section  -->
