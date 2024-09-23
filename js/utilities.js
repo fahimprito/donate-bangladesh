@@ -17,3 +17,8 @@ function getTextValueById(id){
     const inputNum = parseFloat(inputValue);
     return inputNum;
 }
+
+// clear input field 
+function clearInputField(id){
+    document.getElementById(id).value="";
+}

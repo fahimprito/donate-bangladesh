@@ -7,7 +7,7 @@ module.exports = {
                 clifford: '#da373d',
                 lightGreen: '#B4F461',
                 blackSecondary: '#11111191',
-                navBg: '#F9F7F3',
+                navBg: '#fdd83515',
             },
             fontFamily: {
                 lexend: "Lexend",

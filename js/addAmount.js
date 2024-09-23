@@ -21,5 +21,8 @@ document.getElementById('btn-amount-input-nk').addEventListener('click',function
     document.getElementById('balance').innerText = mainBalaneUpdate;
     
     document.getElementById('my_modal_5').showModal();
+
+    // clear input field 
+    clearInputField('amount-input-nk');
     
 })
