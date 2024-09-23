@@ -101,7 +101,7 @@
                         <div class="modal-box flex flex-col items-center">
                             <h3 class="text-4xl font-bold">Congrates!</h3>
                             <img class="py-7" src="./assets/taka.png" alt="tata logo">
-                            <p class="py-4">You have donated for humankind</p>
+                            <p class="py-4">You have donated for Flood at Noakhali, Bangladesh</p>
                             <h3 class="text-2xl font-bold">successfully</h3>
                             <div class="modal-action">
                                 <form method="dialog">
@@ -122,7 +122,7 @@
                     <div class="flex justify-start">
                         <div class="flex gap-2 font-semibold text-xl text-blackSecondary bg-[#11111115] p-2 rounded-lg">
                             <img class="w-7" src="./assets/taka.png" alt="taka logo">
-                            <div id="donate-for-feni">0</div>
+                            <div id="donate-for-feni">100</div>
                             <div>BDT</div>
                         </div>
                     </div>
@@ -135,11 +135,11 @@
                     <button id="btn-amount-input-feni"
                         class="btn btn-lg bg-lightGreen hover:bg-lime-400 font-semibold text-xl px-10 ">Donation</button>
                     <!-- Open the modal -->
-                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                    <dialog id="modal_feni" class="modal modal-bottom sm:modal-middle">
                         <div class="modal-box flex flex-col items-center">
                             <h3 class="text-4xl font-bold">Congrates!</h3>
                             <img class="py-7" src="./assets/taka.png" alt="tata logo">
-                            <p class="py-4">You have donated for humankind</p>
+                            <p class="py-4">You have donated for Flood Relief in Feni, Bangladesh</p>
                             <h3 class="text-2xl font-bold">successfully</h3>
                             <div class="modal-action">
                                 <form method="dialog">
@@ -160,30 +160,24 @@
                     <div class="flex justify-start">
                         <div class="flex gap-2 font-semibold text-xl text-blackSecondary bg-[#11111115] p-2 rounded-lg">
                             <img class="w-7" src="./assets/taka.png" alt="taka logo">
-                            <div id="donate-for-nk">0</div>
+                            <div id="donate-for-quota">0</div>
                             <div>BDT</div>
                         </div>
                     </div>
                     <h2 class="font-bold text-2xl text-gray-one">Aid for Injured in the Quota Movement</h2>
                     <p class="text-xl text-blackSecondary">
-                        The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
-                        donation
-                        will help provide essential supplies and to those affected by this disaster. Every contribution,
-                        big
-                        or small, makes difference. Please join us in supporting the relief efforts and making a
-                        positive
-                        impact on the lives of those in need.
+                        The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
                     </p>
-                    <input id="amount-input-nk" type="text" placeholder="Write Donation Amount"
+                    <input id="amount-input-quota" type="text" placeholder="Write Donation Amount"
                         class="input input-lg input-bordered w-full" />
-                    <button id="btn-amount-input-nk"
+                    <button id="btn-amount-input-quota"
                         class="btn btn-lg bg-lightGreen hover:bg-lime-400 font-semibold text-xl px-10 ">Donation</button>
                     <!-- Open the modal -->
-                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                    <dialog id="modal_quota" class="modal modal-bottom sm:modal-middle">
                         <div class="modal-box flex flex-col items-center">
                             <h3 class="text-4xl font-bold">Congrates!</h3>
                             <img class="py-7" src="./assets/taka.png" alt="tata logo">
-                            <p class="py-4">You have donated for humankind</p>
+                            <p class="py-4">You have donated for injured in the Quota Movement</p>
                             <h3 class="text-2xl font-bold">successfully</h3>
                             <div class="modal-action">
                                 <form method="dialog">
@@ -200,14 +194,15 @@
 
         <!-- History section  -->
         <section id="history-section" class="hidden">
-            <div class="rounded-xl border-2 items-center p-6 my-10">
-                <div class="flex flex-col justify-between gap-4">
+            <div id="empty-history" class="rounded-xl border-2 items-center p-6 my-10">
+                <h2 class="font-bold text-2xl text-red-500 flex justify-center">History is empty.</h2>
+                <!-- <div class="flex flex-col justify-between gap-4">
                     <h2 class="font-bold text-2xl text-gray-one">96500 Taka is Donated for famine-2024 at Feni,
                         Bangladesh</h2>
                     <p class="text-xl text-blackSecondary">
                         Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
                     </p>
-                </div>
+                </div> -->
             </div>
 
         </section>
