@@ -33,7 +33,7 @@
 </head>
 
 <body class="font-lexend">
-    <header class="backdrop-blur-2xl sticky top-0">
+    <header class="backdrop-blur-2xl sticky top-0 z-10">
         <nav class="bg-navBg py-6 ">
             <div class="container mx-auto navbar px-4">
                 <div class="navbar-start">
@@ -83,8 +83,14 @@
                 <input type="radio" name="my-accordion-3" />
                 <div class="collapse-title text-xl font-medium">what is the even delegation in the context of the Dom, and why is it useful?</div>
                 <div class="collapse-content">
-                    <p>Event delegation is a design pattern in JavaScript used to efficiently manage and handle events on multiple child elements by attaching a single event listener to a common ancestor element.
+                    <p>Event delegation is a technique in JavaScript where we add a single event listener to a parent element rather than adding separate event listeners to individual child elements. The event listener on the parent element takes advantage of event bubbling to handle events triggered by child elements.
                     </p>
+                    <h4 class="text-xl">Benefits of Event Delegation:-</h4>
+                    <ul class="list-decimal pl-12">
+                        <li>Fewer Event Listeners: You only need one event listener for a group of child elements.</li>
+                        <li>Handles Future Elements: Automatically works with dynamically added elements</li>
+                        <li>Simpler Management: You manage events from the parent rather than attaching/removing listeners from individual child elements, making the code easier to maintain.</li>
+                    </ul>
                 </div>
             </div>
             <div class="collapse collapse-plus border border-gray-200">
@@ -107,6 +113,7 @@
 
     </main>
 
+    <footer class="bg-navBg py-16 mt-16"></footer>
 
     <script src="./js/blog.js"></script>
 </body>
